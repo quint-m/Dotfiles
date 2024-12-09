@@ -22,6 +22,12 @@ Whether it's the terminal, editor, or other essential tools, these dotfiles are 
 
 ## Installation  
 
+### Install prerequisites
+
+```bash
+sudo apt install ascii-image-converter
+```
+
 ### Clone the Repository  
 ```bash  
 git clone https://github.com/<your-username>/dotfiles.git ~/.conig  
