@@ -189,7 +189,7 @@ diverged = "[◇ ▴┤[${ahead_count}](regular white)│▿┤[${behind_count}]
 untracked = "[📂](italic bright-yellow)"
 stashed = "[📦](italic white)"
 modified = "[✏️ ](italic yellow)"
-staged = "[📥 [$count]]"
+staged = "[📥 $count]"
 renamed = "[◎◦](italic bright-blue)"
 deleted = "[❌](italic red)"
 
