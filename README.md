@@ -15,22 +15,28 @@ Whether it's the terminal, editor, or other essential tools, these dotfiles are 
 ### Editor  
 - **Vim/Neovim configuration**: Plugins, keybindings, and settings for an optimal editing experience.  
 
-### Tools  
-- **Git**: Aliases and improved logging for a better Git workflow.  
-
 ---
 
 ## Installation  
 
-### Install prerequisites
-
+1. Install prerequisites
 ```bash
-sudo apt install ascii-image-converter
+sudo apt install ninja-build gettext cmake unzip curl build-essential ascii-image-converter
+curl -fsSL https://deno.land/install.sh | sh
+```
+
+2. Clone and install NeoVim (prefably from source)
+```bash
+git clone https://github.com/neovim/neovim.git && cd neovim
+rm -r build/  # clear the CMake cache
+make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
+make install
+export PATH="$HOME/neovim/bin:$PATH"
 ```
 
 ### Clone the Repository  
 ```bash  
-git clone https://github.com/<your-username>/dotfiles.git ~/.conig  
+git clone https://github.com/<your-username>/dotfiles.git ~/.config  
 ```  
 
 ## Customization  
