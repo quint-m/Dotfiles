@@ -856,6 +856,10 @@ require('lazy').setup({
       --  - ci'  - [C]hange [I]nside [']quote
       require('mini.ai').setup { n_lines = 500 }
 
+      require('mini.tabline').setup()
+
+      require('mini.bracketed').setup()
+
       -- Add/delete/replace surroundings (brackets, quotes, etc.)
       --
       -- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
@@ -924,6 +928,7 @@ require('lazy').setup({
   require 'kickstart.plugins.neo-tree',
   require 'custom.plugins.snacks',
   require 'custom.plugins.peek',
+  require 'custom.plugins.header',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
