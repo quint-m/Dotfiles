@@ -7,9 +7,5 @@ return {
     auto_update = true, -- Update header when saving.
     user = 'qmennen', -- Your user.
     mail = 'qmennen@student.codam.nl', -- Your mail.
-    -- add other options.
   },
-  config = function(_, opts)
-    require('42header').setup(opts)
-  end,
 }
